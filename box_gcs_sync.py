@@ -47,10 +47,10 @@ BOX_MTIME_KEY = "box_mtime"
 
 
 def json_config_to_jwtauth(plaintext: str) -> dict:
-    """Parse a Box application configuration JSON file into JWTAuth arguments.
+    """Parse a Box application configuration JSON string into JWTAuth arguments.
     
     Arguments:
-        filename {str} -- The Box app configuration JSON file.
+        plaintext {str} -- The Box app configuration JSON string.
     
     Returns:
         dict -- Arguments for the JWTAuth constructor. 
