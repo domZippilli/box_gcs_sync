@@ -42,7 +42,7 @@ The following arguments are required:
 ```shell
   -c CONFIG, --config CONFIG
                         Box app configuration ciphertext file path (this must
-                        be encrypted with Google Cloud KMS).
+                        be encrypted with a key present in Google Cloud KMS).
   -k KEYNAME, --keyname KEYNAME
                         Fully qualified name of the key to decrypt the
                         configuration ciphertext, as given by `gcloud kms keys

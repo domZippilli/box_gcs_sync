@@ -335,7 +335,7 @@ def get_args():
         type=str,
         required=True,
         help=
-        "Box app configuration ciphertext file path (this must be encrypted with Google Cloud KMS)."
+        "Box app configuration ciphertext file path (this must be encrypted a key present in with Google Cloud KMS)."
     )
     parser.add_argument(
         '-k',
