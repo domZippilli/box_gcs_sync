@@ -5,12 +5,13 @@ Synchronize a Box user account's file listings with a GCS bucket.
 This utility will walk a Box account's file heirarchy and compare the files with GCS blobs in the bucket. Then it will perform the reverse, listing the bucket's blobs and and comparing them to the Box listing.
 
 Synchronization rules:
-    - The Box account is considered to be authoritative; files in it will not be deleted or overwritten.
-    - When a Box file is found that does not exist in GCS, it will be copied to GCS. Same for folders.
-    - When a GCS blob is found that does not exist in Box, it will be copied to Box. Same for folders.
-    - When a file in Box is modified, the modified file will be copied to GCS.
-    - When a file in Box is deleted that was previously synced to GCS, the GCS object will be deleted.
-    - When a file is found in both Box and GCS with no sync metadata, no action is taken but a warning is generated.
+
+- The Box account is considered to be authoritative; files in it will not be deleted or overwritten.
+- When a Box file is found that does not exist in GCS, it will be copied to GCS. Same for folders.
+- When a GCS blob is found that does not exist in Box, it will be copied to Box. Same for folders.
+- When a file in Box is modified, the modified file will be copied to GCS.
+- When a file in Box is deleted that was previously synced to GCS, the GCS object will be deleted.
+- When a file is found in both Box and GCS with no sync metadata, no action is taken but a warning is generated.
 
 ## Setup
 
